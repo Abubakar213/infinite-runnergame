@@ -10,12 +10,12 @@ var background1,backgroundImg;
 function preload(){
   
   
-  monkey_running = loadAnimation("sprite_0.png","sprite_1.png","sprite_2.png","sprite_3.png","sprite_4.png","sprite_5.png","sprite_6.png","sprite_7.png","sprite_8.png");
+  monkey_running = loadAnimation("images/sprite_0.png","images/sprite_1.png","images/sprite_2.png","images/sprite_3.png","images/sprite_4.png","images/sprite_5.png","images/sprite_6.png","images/sprite_7.png","images/sprite_8.png");
   
-  bananaImage = loadImage("banana.png");
-  obstacleImage = loadImage("obstacle.png");
-  monkey_stable = loadImage("sprite_1.png"); 
-  backgroundImg = loadImage("jungle.jpg");
+  bananaImage = loadImage("images/banana.png");
+  obstacleImage = loadImage("images/obstacle.png");
+  monkey_stable = loadImage("images/sprite_1.png"); 
+  backgroundImg = loadImage("images/jungle.jpg");
 }
 
 
@@ -111,7 +111,7 @@ function spawnObstacles(){
 function spawnFood(){
   if (frameCount  % 200 === 0){
     var banana = createSprite(1200,120,10,40);
-    banana.y = Math.round(random(300,500));
+    banana.y = Math.round(random(800,800));
     banana.addImage(bananaImage);
     banana.scale = 0.2;
     banana.velocityX = -7;
